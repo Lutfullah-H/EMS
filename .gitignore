@@ -1,0 +1,5 @@
+# dont add uploads folder to gitrepositry
+
+assets/uploads/*
+
+!assets/uploads/.gitkeep
