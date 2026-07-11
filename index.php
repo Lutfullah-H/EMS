@@ -16,6 +16,9 @@ if ($data)
 {
 	if (password_verify($password, $data['password']))
 	{
+		session_start();
+		$_SESSION['username'] = $data['username'];
+
 		header("Location: dashboard.php");
 		exit();
 	}
